@@ -2,10 +2,13 @@ extends ../layout.pug
 
 //- Переопредделение переменных шаблона layout.pug для страницы index.html
 block vars
-  - var headTitle  = 'Заголовок страницы'; //- Title
+  - var headTitle  = 'О китае — просто'; //- Title
   - var bodyClass = 'index-page' //- Классы для body
 
 block content
 
 block main
   main
+    .site
+      include ../blocks/first-screen/first-screen.pug
+      include ../blocks/for-whom-screen/for-whom-screen.pug

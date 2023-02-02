@@ -1,4 +1,13 @@
 @import "variables";
+@import "fonts/inter";
+@import "fonts/MADE-TheArtist-Script";
+@import "blocks/first-screen/first-screen.scss";
+
+body {
+  overflow-x: hidden;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
 
 .visually-hidden {
   position: absolute;
@@ -6,4 +15,10 @@
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0);
+}
+
+.container-custom {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
 }
