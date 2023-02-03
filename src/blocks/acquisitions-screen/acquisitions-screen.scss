@@ -1,16 +1,7 @@
 .acquisitions-screen {
   &__title-block {
-    display: flex;
-    flex-direction: column-reverse;
     min-height: 640px;
-    margin-bottom: 50px;
     background-image: url("../img/photo/acquisitions_background-x2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  &__title {
-    color: $white-color;
   }
 
   &__content {
@@ -57,5 +48,6 @@
     width: 218px;
     color: $text-dark-color;
     text-align: left;
+    opacity: 0.5;
   }
 }

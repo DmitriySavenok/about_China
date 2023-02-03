@@ -1,37 +1,9 @@
 @import "variables";
+@import "common-styles";
 @import "fonts/inter";
 @import "fonts/MADE-TheArtist-Script";
 @import "blocks/first-screen/first-screen.scss";
 @import "blocks/for-whom-screen/for-whom-screen.scss";
 @import "blocks/acquisitions-screen/acquisitions-screen.scss";
+@import "blocks/advantages-screen/advantages-screen.scss";
 @import "blocks/button/button.scss";
-
-body {
-  overflow-x: hidden;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-}
-
-.script-font {
-  font-weight: normal;
-  font-family: MadeTheArtistScript, sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-}
-
-.container-custom {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.section-title {
-  font-weight: 100;
-  font-size: 48px;
-}
