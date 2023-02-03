@@ -2,11 +2,18 @@
 @import "fonts/inter";
 @import "fonts/MADE-TheArtist-Script";
 @import "blocks/first-screen/first-screen.scss";
+@import "blocks/for-whom-screen/for-whom-screen.scss";
+@import "blocks/button/button.scss";
 
 body {
   overflow-x: hidden;
   font-family: Inter, Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
+}
+
+.script-font {
+  font-weight: normal;
+  font-family: MadeTheArtistScript, sans-serif;
 }
 
 .visually-hidden {
