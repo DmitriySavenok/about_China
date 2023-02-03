@@ -1,0 +1,61 @@
+.acquisitions-screen {
+  &__title-block {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 640px;
+    margin-bottom: 50px;
+    background-image: url("../img/photo/acquisitions_background-x2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__title {
+    color: $white-color;
+  }
+
+  &__content {
+    background-image: url("../img/photo/acquisitions_background-boxes-x1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom 12% left;
+    background-size: 100%;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-item {
+    margin-bottom: 50px;
+  }
+
+  &__list-item-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 18px;
+    color: $white-color;
+    font-weight: 500;
+    font-size: 24px;
+    background-color: $blue-color;
+    border-radius: 50%;
+  }
+
+  &__list-item-text {
+    margin-bottom: 18px;
+    color: $text-dark-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__list-item-separator {
+    display: inline-block;
+    width: 218px;
+    color: $text-dark-color;
+    text-align: left;
+  }
+}

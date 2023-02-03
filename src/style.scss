@@ -3,6 +3,7 @@
 @import "fonts/MADE-TheArtist-Script";
 @import "blocks/first-screen/first-screen.scss";
 @import "blocks/for-whom-screen/for-whom-screen.scss";
+@import "blocks/acquisitions-screen/acquisitions-screen.scss";
 @import "blocks/button/button.scss";
 
 body {
@@ -28,4 +29,9 @@ body {
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.section-title {
+  font-weight: 100;
+  font-size: 48px;
 }
