@@ -1,0 +1,42 @@
+body {
+  overflow-x: hidden;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.script-font {
+  font-weight: normal;
+  font-family: MadeTheArtistScript, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.container-custom {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  color: $white-color;
+  font-weight: 100;
+  font-size: 48px;
+}
+
+.section-title-block {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.letter-spacing-3persent {
+  letter-spacing: -0.03em;
+}

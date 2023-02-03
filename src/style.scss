@@ -1,9 +1,9 @@
 @import "variables";
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-}
+@import "common-styles";
+@import "fonts/inter";
+@import "fonts/MADE-TheArtist-Script";
+@import "blocks/first-screen/first-screen.scss";
+@import "blocks/for-whom-screen/for-whom-screen.scss";
+@import "blocks/acquisitions-screen/acquisitions-screen.scss";
+@import "blocks/advantages-screen/advantages-screen.scss";
+@import "blocks/button/button.scss";

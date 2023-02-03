@@ -1,0 +1,53 @@
+.first-screen {
+  &__background {
+    height: 100vh;
+    background-color: white;
+    background-image: url("../img/photo/first-screen_background-x2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  & .container-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 256px;
+    padding-bottom: 150px;
+  }
+
+  &__author-name {
+    width: fit-content;
+    margin: 0;
+    padding: 10px 20px;
+    color: $text-dark-color;
+    text-decoration: none;
+    background: rgba(255 255 255 / 25%);
+    border-radius: 4px;
+  }
+
+  &__course-description {
+    margin-bottom: 50px;
+    color: $text-dark-color;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  &__course-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__course-start {
+    padding-right: 1em;
+    color: $text-dark-color;
+    font-weight: 100;
+    font-size: 24px;
+  }
+
+  &__buy-button {
+    justify-self: center;
+  }
+}
