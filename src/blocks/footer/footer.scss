@@ -39,5 +39,17 @@
   &__info-link {
     display: block;
     text-decoration: underline;
+    transition: all ease 0.4s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__contact-button:hover {
+    color: $white-color;
+  }
+
+  .footer__info-link:hover {
+    text-decoration: none;
+    opacity: 1;
   }
 }
