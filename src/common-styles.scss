@@ -41,3 +41,9 @@ body {
 .letter-spacing-3persent {
   letter-spacing: -0.03em;
 }
+
+@media (max-width: $small-screen-width) {
+  .section-title {
+    font-size: 38px;
+  }
+}

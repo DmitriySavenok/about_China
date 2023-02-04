@@ -56,3 +56,17 @@
     opacity: 0.5;
   }
 }
+
+@media (max-width: $small-screen-width) {
+  .advantages-list {
+    &__item {
+      width: 100%;
+    }
+
+    &__item-title {
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      word-break: break-word;
+    }
+  }
+}
