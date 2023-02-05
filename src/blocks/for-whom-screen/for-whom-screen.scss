@@ -48,8 +48,8 @@
 
 @media (max-width: $small-screen-width) {
   .for-whom-screen {
-    &__title {
-      letter-spacing: -0.02em;
+    &__title br {
+      display: block;
     }
   }
 }

@@ -14,4 +14,11 @@ block main
       include ../blocks/for-whom-screen/for-whom-screen.pug
       include ../blocks/acquisitions-screen/acquisitions-screen.pug
       include ../blocks/advantages-screen/advantages-screen.pug
+      include ../blocks/tariffs-screen/tariffs-screen.pug
       include ../blocks/footer/footer.pug
+
+
+
+//- Блок с подключением js файлов (при необходимости переопределяется)
+block scripts
+   script(src="js/tariffs-screen.min.js")

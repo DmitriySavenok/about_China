@@ -9,6 +9,10 @@ body {
   font-family: MadeTheArtistScript, sans-serif;
 }
 
+.color-text {
+  color: $blue-color;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,6 +23,7 @@ body {
 
 .container-custom {
   box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }

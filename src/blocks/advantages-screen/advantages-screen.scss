@@ -3,6 +3,14 @@
     min-height: 765px;
     background-image: url("../img/photo/advantages_background-x2.jpg");
   }
+
+  .container-custom {
+    margin: 0;
+  }
+
+  &__title br {
+    display: none;
+  }
 }
 
 .advantages-list {
@@ -57,7 +65,17 @@
   }
 }
 
+.word-hyphenation {
+  display: none;
+}
+
 @media (max-width: $small-screen-width) {
+  .advantages-screen {
+    &__title br {
+      display: block;
+    }
+  }
+
   .advantages-list {
     &__item {
       width: 100%;
@@ -65,8 +83,10 @@
 
     &__item-title {
       font-size: 20px;
-      letter-spacing: -0.02em;
-      word-break: break-word;
+    }
+
+    &__item-title .word-hyphenation {
+      display: inline;
     }
   }
 }
