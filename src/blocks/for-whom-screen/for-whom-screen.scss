@@ -1,10 +1,18 @@
 .for-whom-screen {
   color: $text-dark-color;
 
+  & .container-custom {
+    padding-top: 2em;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 50px;
     color: $text-dark-color;
+  }
+
+  &__title br {
+    display: none;
   }
 
   &__title-font-script {
@@ -35,5 +43,13 @@
     padding: 0;
     font-weight: 400;
     font-size: 16px;
+  }
+}
+
+@media (max-width: $small-screen-width) {
+  .for-whom-screen {
+    &__title br {
+      display: block;
+    }
   }
 }

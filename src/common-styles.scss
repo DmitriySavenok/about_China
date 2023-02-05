@@ -9,6 +9,10 @@ body {
   font-family: MadeTheArtistScript, sans-serif;
 }
 
+.color-text {
+  color: $blue-color;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,6 +23,7 @@ body {
 
 .container-custom {
   box-sizing: border-box;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -34,9 +39,16 @@ body {
   flex-direction: column-reverse;
   margin-bottom: 50px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: top center;
+  background-size: cover;
 }
 
 .letter-spacing-3persent {
   letter-spacing: -0.03em;
+}
+
+@media (max-width: $small-screen-width) {
+  .section-title {
+    font-size: 38px;
+  }
 }

@@ -1,0 +1,55 @@
+.footer {
+  padding: 50px 0;
+  background-color: #16353f;
+
+  &__title {
+    font-size: 32px;
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    color: $white-color;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__button-block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__contact-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 28px;
+    padding-right: 32px;
+    color: $blue-color;
+    text-align: center;
+    background-color: $white-color;
+  }
+
+  &__info-text {
+    color: $white-color;
+    font-weight: 200;
+    font-size: 1em;
+    opacity: 0.5;
+  }
+
+  &__info-link {
+    display: block;
+    text-decoration: underline;
+    transition: all ease 0.4s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__contact-button:hover {
+    color: $white-color;
+  }
+
+  .footer__info-link:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+}

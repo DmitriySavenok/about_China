@@ -8,4 +8,17 @@
   text-decoration: none;
   background-color: $blue-color;
   border-radius: 4px;
+  transition: all ease 0.4s;
+  user-select: none;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: #64a3b7;
+    cursor: pointer;
+  }
 }
