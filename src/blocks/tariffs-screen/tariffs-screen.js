@@ -10,6 +10,8 @@ function unwrapTariffcard() {
         basicTariffcard = document.querySelector('#standart-tariff').classList.toggle('tariff-card__toggle-button--pressed');
       } else if (e.target.id === 'vip-tariff-detailed') {
         basicTariffcard = document.querySelector('#vip-tariff').classList.toggle('tariff-card__toggle-button--pressed');
+      } else if (e.target.id === 'plus-tariff-detailed') {
+        basicTariffcard = document.querySelector('#plus-tariff').classList.toggle('tariff-card__toggle-button--pressed');
       }
     })
   })
