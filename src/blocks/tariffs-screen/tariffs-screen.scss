@@ -66,6 +66,7 @@
   }
 
   &__list {
+    margin-bottom: 36px;
     padding-left: 18px;
   }
 
@@ -96,7 +97,7 @@
   }
 
   &__bonus-info {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     color: $text-dark-color;
     font-weight: 700;
     font-size: 24px;
@@ -162,6 +163,16 @@
     font-size: 36px;
     text-align: right;
   }
+}
+
+.old-price {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  align-self: flex-start;
+  margin: 0;
+  font-size: 24px;
+  text-decoration: line-through;
+  opacity: 0.5;
 }
 
 .vip-tariff-card {

@@ -1,7 +1,6 @@
 .first-screen {
   &__background {
-    height: 100vh;
-    background-color: white;
+    background-color: $white-color;
     background-image: url("../img/photo/first-screen_background-x2.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -11,12 +10,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 857px;
     padding-top: 256px;
-    padding-bottom: 15%;
+    padding-bottom: 35%;
   }
 
   &__author-name {
+    align-self: flex-start;
     width: fit-content;
     margin: 0;
     padding: 10px 20px;
@@ -27,16 +27,22 @@
   }
 
   &__course-description {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     color: $text-dark-color;
     font-weight: 200;
-    font-size: 1em;
+    font-size: 18px;
     text-align: center;
   }
 
   &__course-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    // Для экрана с датой курса
+    // grid-template-columns: 1fr 1fr;
+
+    //Для экрана без даты курса
+    grid-template-columns: auto;
+    justify-content: center;
+
     align-items: center;
   }
 
@@ -49,14 +55,6 @@
 
   &__buy-button {
     justify-self: center;
-  }
-}
-
-@media (max-width: $mobile-small-screen-width) {
-  .first-screen {
-    & .container-custom {
-      justify-content: space-between;
-    }
   }
 }
 
