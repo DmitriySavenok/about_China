@@ -199,6 +199,12 @@
   clip: auto;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .tariff-card__toggle-button {
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 370px) {
   .tariff-card__title-block {
     display: grid;

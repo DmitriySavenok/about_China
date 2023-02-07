@@ -80,3 +80,9 @@
   height: 100%;
   transform: translateY(0);
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .question-card__toggle-button {
+    cursor: pointer;
+  }
+}
