@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-height: 768px) {
+@media (max-height: 768px) {
   .for-whom-screen {
     padding-bottom: 50px;
     background-image: url("../img/photo/acquisitions_background-boxes-x1.jpg");
@@ -69,11 +69,11 @@
     }
 
     &__list-item-number {
-      font-size: 32px;
+      font-size: 24px;
     }
 
     &__list-item-text {
-      font-size: 24px;
+      font-size: 16px;
     }
   }
 }

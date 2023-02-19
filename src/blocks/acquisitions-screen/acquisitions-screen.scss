@@ -51,3 +51,35 @@
     opacity: 0.5;
   }
 }
+
+@media (min-width: 768px) {
+  .acquisitions-screen {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+    &__content {
+      background: none;
+    }
+
+    &__list {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    &__list-item {
+      margin-bottom: 0;
+    }
+
+    &__list-item-text {
+      font-size: 16px;
+    }
+
+    &__list-item-separator {
+      display: none;
+    }
+  }
+}
