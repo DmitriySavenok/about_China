@@ -53,3 +53,27 @@
     }
   }
 }
+
+@media (min-height: 768px) {
+  .for-whom-screen {
+    padding-bottom: 50px;
+    background-image: url("../img/photo/acquisitions_background-boxes-x1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom 15% right;
+
+    &__list {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__list-item-number {
+      font-size: 32px;
+    }
+
+    &__list-item-text {
+      font-size: 24px;
+    }
+  }
+}
