@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-height: 768px) {
+@media (min-width: 768px) {
   .for-whom-screen {
     padding-bottom: 50px;
     background-image: url("../img/photo/acquisitions_background-boxes-x1.jpg");
@@ -66,10 +66,11 @@
       grid-auto-flow: column;
       grid-template-rows: auto auto auto;
       grid-template-columns: 1fr 1fr;
+      gap: 20px;
     }
 
     &__list-item-number {
-      font-size: 24px;
+      font-size: 32px;
     }
 
     &__list-item-text {
