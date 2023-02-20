@@ -37,13 +37,8 @@
 
   &__course-info {
     display: grid;
-    // Для экрана с датой курса
-    // grid-template-columns: 1fr 1fr;
-
-    //Для экрана без даты курса
-    grid-template-columns: auto;
-    justify-content: center;
-
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -56,6 +51,7 @@
 
   &__buy-button {
     justify-self: center;
+    padding: 20px 30px;
   }
 }
 
@@ -126,7 +122,6 @@
       display: flex;
       background-color: $white-color;
       background-image: url("../img/photo/first-screen-desktop-background.jpg");
-      // background-image: url("../img/photo/first-screen_background-x2.webp");
       background-repeat: no-repeat;
       background-size: 100%;
     }
