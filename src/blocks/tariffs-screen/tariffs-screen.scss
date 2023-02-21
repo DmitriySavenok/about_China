@@ -233,7 +233,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 920px) {
   .tariffs-screen {
     display: grid;
     grid-template-rows: auto auto;
@@ -285,9 +285,9 @@
     }
 
     &__icon-block {
-      min-height: 100px;
       grid-row: 1 / 2;
       grid-column: 2 / 3;
+      min-height: 100px;
       text-align: right;
     }
 
@@ -296,20 +296,11 @@
       height: auto;
     }
 
-    // &__content {
-    //   position: static;
-    //   height: auto;
-    //   margin: 0;
-    //   transform: translateY(0);
-    //   transition: 1s;
-    //   clip: auto;
-    // }
-
     &__bottom {
-      margin-top: auto;
-      margin-bottom: 0;
       grid-template-rows: auto auto auto;
       grid-template-columns: auto;
+      margin-top: auto;
+      margin-bottom: 0;
     }
 
     &__toggle-button {

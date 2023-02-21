@@ -70,3 +70,23 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
+@media (min-width: 992px) {
+  .reviews-screen {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__slider-block {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .reviews-screen {
+    &__slider-block {
+      width: 750px;
+    }
+  }
+}

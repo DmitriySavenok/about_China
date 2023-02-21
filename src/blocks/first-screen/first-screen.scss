@@ -38,8 +38,8 @@
   &__course-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__course-start {
@@ -51,7 +51,7 @@
 
   &__buy-button {
     justify-self: center;
-    padding: 20px 30px;
+    padding: 20px;
   }
 }
 
@@ -100,14 +100,10 @@
     }
 
     &__course-description {
-      text-align: left;
-      font-weight: 300;
-      font-size: 24px;
       margin: 16px 0;
-    }
-
-    &__course-description {
+      font-weight: 300;
       font-size: 16px;
+      text-align: left;
     }
 
     &__course-start {
@@ -127,39 +123,40 @@
     }
 
     & .container-custom {
+      justify-content: flex-end;
       margin-top: auto;
       margin-bottom: 0;
       padding-top: 0;
       padding-bottom: 24px;
-      justify-content: flex-end;
     }
 
     &__course-description {
-      text-align: left;
       font-weight: 300;
       font-size: 24px;
+      text-align: left;
     }
 
     &__course-info {
-      grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
 
     &__course-start {
-      grid-column: 2 / 3;
       grid-row: 1 / 2;
+      grid-column: 2 / 3;
       justify-self: flex-end;
+      padding: 10px 20px;
       font-weight: 300;
       font-size: 24px;
-      padding: 10px 20px;
       background: rgba(255 255 255 / 50%);
       border-radius: 4px;
     }
 
     &__buy-button {
-      grid-column: 1 / 2;
       grid-row: 1 / 2;
+      grid-column: 1 / 2;
       justify-self: flex-start;
+      padding: 20px 58px;
     }
   }
 }
@@ -176,6 +173,14 @@
   .first-screen {
     & .container-custom {
       min-height: 100vh;
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .first-screen {
+    & .container-custom {
+      min-height: calc(100vh + 120px);
     }
   }
 }
