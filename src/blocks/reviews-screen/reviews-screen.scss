@@ -74,9 +74,16 @@
 @media (min-width: 992px) {
   .reviews-screen {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+
+    &__title-block {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
 
     &__slider-block {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
       width: 500px;
       margin: 0 auto;
     }

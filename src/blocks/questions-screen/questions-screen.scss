@@ -86,3 +86,34 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 768px) {
+  .questions-screen {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 50px;
+
+    &__title-block {
+      margin-bottom: 0;
+    }
+  }
+
+  .questions-screen__content .container-custom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .question-card {
+    margin-bottom: 0;
+  }
+
+  .question-card__answer {
+    display: grid;
+    transform: translateY(0);
+  }
+
+  .question-card__toggle-button {
+    display: none;
+  }
+}

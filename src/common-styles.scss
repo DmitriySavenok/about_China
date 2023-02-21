@@ -21,11 +21,6 @@ body {
   clip: rect(0 0 0 0);
 }
 
-// .site {
-//   max-width: 450px;
-//   margin: 0 auto;
-// }
-
 .container-custom {
   box-sizing: border-box;
   width: 100%;
@@ -55,5 +50,18 @@ body {
 @media (max-width: $small-screen-width) {
   .section-title {
     font-size: 38px;
+  }
+}
+
+@media (min-width: 992px) {
+  .for-whom-screen,
+  .acquisitions-screen,
+  .advantages-screen,
+  .reviews-screen {
+    padding: 50px 0;
+  }
+
+  .section-title-block {
+    margin-bottom: 0;
   }
 }
