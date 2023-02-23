@@ -1,0 +1,131 @@
+.questions-screen {
+  &__title-block {
+    min-height: 641px;
+    background-image: url("../img/photo/questions_background-x2.jpg");
+  }
+}
+
+.question-card {
+  margin-bottom: 50px;
+  padding: 24px 14px;
+  background: $white-color;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(79 79 77 / 50%);
+
+  &__question {
+    display: grid;
+    grid-template-columns: 82px auto;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__answer {
+    display: none;
+    grid-template-columns: auto 82px;
+    gap: 10px;
+    transform: translateY(-30px);
+    transition: 1s;
+  }
+
+  &__question-text-block {
+    height: fit-content;
+    padding: 24px;
+    border: 1px solid $blue-color;
+    border-radius: 10px;
+  }
+
+  &__answer-text-block {
+    height: fit-content;
+    padding: 24px;
+    background-color: $blue-color;
+    border-radius: 10px;
+  }
+
+  &__question-text {
+    margin: 0;
+    color: $text-dark-color;
+  }
+
+  &__answer-text {
+    margin: 0;
+    color: $white-color;
+  }
+
+  &__toggle-button {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+    padding: 0;
+    color: $text-dark-color;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: left;
+    background: transparent;
+    border: none;
+  }
+
+  &__toggle-button-icon {
+    margin-left: 12px;
+    transform: rotate(180deg);
+    transition: transform ease 0.4s;
+  }
+}
+
+.question-card__toggle-button--pressed .question-card__toggle-button-icon {
+  transform: rotate(0deg);
+}
+
+.question-card__toggle-button--pressed .question-card__answer {
+  display: grid;
+  height: 100%;
+  transform: translateY(0);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .question-card__toggle-button {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .questions-screen {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 50px;
+
+    &__title-block {
+      margin-bottom: auto;
+    }
+
+    &__content {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .questions-screen {
+    &__title-block {
+      margin-bottom: 0;
+    }
+  }
+
+  .questions-screen__content .container-custom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .question-card {
+    margin-bottom: 0;
+  }
+
+  .question-card__answer {
+    display: grid;
+    transform: translateY(0);
+  }
+
+  .question-card__toggle-button {
+    display: none;
+  }
+}

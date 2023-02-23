@@ -52,3 +52,16 @@ body {
     font-size: 38px;
   }
 }
+
+@media (min-width: 992px) {
+  .for-whom-screen,
+  .acquisitions-screen,
+  .advantages-screen,
+  .reviews-screen {
+    padding: 50px 0;
+  }
+
+  .section-title-block {
+    margin-bottom: 0;
+  }
+}

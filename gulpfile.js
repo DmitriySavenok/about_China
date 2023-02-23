@@ -23,7 +23,7 @@ var path = {
       pug: "src/pages/*.pug",
       js: "src/**/*.js",
       scss: "{src/style.scss,src/libraries/*.scss}",
-      images: "src/images/**/*.+(png|jpg|gif|ico|svg|webp)",
+      images: "src/images/**/*.+(png|jpg|gif|ico|svg|webp|avif)",
       fonts: "src/fonts/*.{ttf,otf,woff,woff2}"
   },
   watch: {
